@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  height: 30px;
+  width: 65%;
+  margin-left: 16.5%;
+  margin-top: 100px
+}
+
+input::placeholder {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 14px;
+}
+
+#btn {
+  text-align: center;
+  height: 35px;
+  width: 35.5px;
+  margin-top: 100px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 12px;
+  background-color: #39AEA9;
+  border: 1px solid #39AEA9;
+  border-radius: 2px;
+}
+#btn:hover {
+  background-color: #70d9d4;
+  border: #70d9d4;
+}
+
+.feedback p{
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-left: 16.5%;
+}
+
+.link {
+  color: #39AEA9;
+}
+
+h1 {
+  margin-top: 80px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.forums {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.box {
+  color: black;
+  background-color: #39AEA9;
+  width: 100px;
+  padding: 90px 126px;
+  margin: 12px;
+  border: 1px solid #39AEA9;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.box:hover{
+  background-color: #70d9d4;
+  border: #70d9d4;
+}
