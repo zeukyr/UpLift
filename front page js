@@ -1,0 +1,4 @@
+function signUp() {
+    console.log("HEY ANGELA U STINKY");
+    
+}
