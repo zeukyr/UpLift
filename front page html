@@ -10,9 +10,9 @@
 <body>
     <div class="navbar">
         <div class="nav-left">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Forum</a>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">FORUM</a>
         </div>
 <!-- 
         <div class="center">
