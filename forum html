@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="searchbar">
-    <input type="text" list="universities" id="university" placeholder="SEARCH COLLEGE/UNIVERSITY FORUMS..." onEnter="openForum()">
+    <input type="text" list="universities" id="university" placeholder="SEARCH COLLEGE/UNIVERSITY FORUMS...">
       <datalist id="universities">
         <option value="University of Calgary"></option>
         <option value="Rice University"></option>
