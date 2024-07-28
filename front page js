@@ -1,4 +1,19 @@
+function redirectToHome() {
+    window.location.replace("index.html");
+}
+function redirectToAbout() {
+    window.location.replace("about.html");
+}
+
+function redirectToForum() {
+    window.location.replace("about.html");
+}
+
+
 function signUp() {
-    console.log("HEY ANGELA U STINKY");
-    
+    console.log("Sign Up button clicked");
+}
+
+function logIn() {
+    console.log("Log In button clicked");
 }
