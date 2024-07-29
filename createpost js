@@ -1,0 +1,34 @@
+
+//NavBar
+function redirectToHome() {
+    window.location.replace("index.html");
+}
+function redirectToAbout() {
+    window.location.replace("about.html");
+}
+
+function redirectToForum() {
+    window.location.replace("calgaryforum.html");
+}
+
+function createPost() {
+    window.location.replace("createpost.html");
+}
+
+function addPost() {
+    window.location.replace("calgaryforum.html");
+}
+
+
+
+//Comment
+function showComment(){
+    var commentArea = document.getElementById("comment-area");
+    commentArea.classList.remove("hide");
+}
+
+//Reply
+function showReply(){
+    var replyArea = document.getElementById("reply-area");
+    replyArea.classList.remove("hide");
+}
