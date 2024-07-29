@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">TITLE/LOGO</div>
+            <!--<a href="/"><img src="logo.png" alt="logo" height="60"></a>  this is for an image logo -->
+        <div class="navbar">
+            <div class="nav-right">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/">Forums</a>
+            </div>
+        </div>
+    </nav>
+    <!--<div class="content">
+        <img src="study.jpg" alt="Studying" class="transparent-image">
+        <p class="text-on-image"></p>-->
+    </div>
+    
+    <section class="hero">
+        <div class="hero-container">
+            <div class="text">
+                <center><h1>SUCCEED TOGETHER.</h1>
+                <p>CONNECT WITH STUDENTS FROM YOUR UNIVERSITY 
+                    <br>OR EXPLORE DIFFERENT UNIVERSITIES</p>
+                <button>GET STARTED</button></center>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
