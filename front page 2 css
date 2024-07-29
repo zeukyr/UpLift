@@ -40,6 +40,7 @@ nav a:hover{
 }
 
 .hero-container{ /*sorry guys not entirely sure how this part works*/
+    display: grid;
     height: 100vh;
     padding:10rem calc((100vw - 1300px)/2);
     align-items: center;
