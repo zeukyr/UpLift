@@ -19,9 +19,12 @@
             </div>
         </div>
     </nav>
-    <!--<div class="content">
-        <img src="study.jpg" alt="Studying" class="transparent-image">
-        <p class="text-on-image"></p>-->
+
+    <div class="login">
+        <button onclick="logIn()">Log In</button>
+        </div>
+         
+         </div>
     </div>
     
     <section class="hero">
@@ -33,6 +36,7 @@
                 <button>GET STARTED</button></center>
             </div>
         </div>
+
     </section>
     
     <script src="script.js"></script>
