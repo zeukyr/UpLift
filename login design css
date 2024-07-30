@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.interactive {
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #435a5e;
+}
+
+
+.login1 {
+    width: 500px;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.login1 form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+h1{
+    padding: 10px 0;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 0 100px;
+}
+form .id{
+    position: relative;
+}
+
+
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border: 1px solid #557c83;
+    border-radius: 3px;
+    background: white;
+    padding: 0.15px;
+    font-size: 20px;
+    /*font-family:*/
+}
+
+form textarea{
+    padding: 5px 100px; /* half of these numbers aren't doing anything rip */
+    border: 1px solid #557c83;
+    border-radius: 10px;
+    background: white;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    color: #ffff;
+    background: #339ea9;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+}
+button:hover {
+    background:#70d9d4;
+    color:#e5eec1;
+}
+
+body{
+    background-image: linear-gradient(#a2d5ac,#3aada8);
+}
+
+/*form p{  for font 
+}*/
+
+/* the rest is just the navbar again */
+
+nav {
+    height: 80px;
+    background: #ffff;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px)/2); /* no clue how this works but the guy in the video did it */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: auto;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbar{
+    text-align: center;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #557c83;
+    padding:0 1.5rem;
+}
+nav a:hover{
+    color:#a2d5ac;
+}
+.logo{
+    color:#557c83;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding:0 2rem;
+}
