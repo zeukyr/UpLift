@@ -1,82 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-</head>
+/* navbar */
+.navbar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 
-<body>
-    <header>
-        <!--NavBar Section-->
-        <div class="navbar">
-            <div class="nav-left">
-                <a href="#" onclick="redirectToHome()">Home</a>
-                <a href="#" onclick="redirectToAbout()">About</a>
-                <a href="#" onclick="redirectToForum()">Forum</a>
-            </div>
-    </header>
-    <div class="container">
-        <div class="subforum">
-            <div class="subforum-title">
-                <h1>UCalgary Community</h1>
-            </div>
-    
-        </div>
-        <!--More-->
-        
-        <div class="subforum">
-            <div class="subforum-row">
-            </div>
-            <hr class="subforum-devider">
-            <div class="subforum-row">
-                <div class="subforum-icon subforum-column center">
-                    <img src="images/social.png" alt="Social">
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">Looking for a friend 👉👈 </a></h4>
-                </p> hello! im a 2nd year at UCalgary studying chem and im looking for some friends! hmu if you want to chat or study tgt :D.</p>
-                <span> 12 Upvotes | 1 Reply </span>
-                </div>
-                <div class="subforum-info subforum-column">
-                    by <a href="">Piplup, UCalgary '32</a> 
-                    on <small>12 Dec 2023</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="subforum-row">
-                <div class="subforum-icon subforum-column center">
-                    <img src="images/textbook.png" alt="Textbook">
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">FREE TEXTBOOKS!!!</a></h4>
-                    <p>Does anyone need textbooks for PSY100H1?</p>
-                    <span>4 Upvotes | 1 Replyfa-</span>
-                </div>
-                <div class="subforum-info subforum-column">
-                    by <a href="">Turtle, UCalgary '29</a> 
-                    <br>on <small>12 Dec 2023</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="subforum-row">
-                <div class="subforum-icon subforum-column center">
-                    <img src="images/advice.png" alt="Advice">
-                </div>
-                <div class="subforum-description subforum-column">
-                    <h4><a href="#">HELP I CAN'T FIND SCHOLARSHIPSS</a></h4>
-                    <p>Description Content: I’m a FGLI student in Ontario! I desperately need advice for finding/applying for university scholarships.</p>
-                    <span>1 Upvote | 1 Reply </span>
-                </div>
-                <div class="subforum-info subforum-column">
-                    by <a href="">Chicken, UCalgary '27</a> 
-                    <br>on <small>11 Dec 2023</small>
-                </div>
-            </div>
-        </div>
+.nav-left a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
 
-    <script src="main.js"></script>
-</body>
-</html>
+.logo{
+    color:#557c83;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding:0 2rem;
+}
+
+.hero-container{ /*sorry guys not entirely sure how this part works*/
+    display: grid;
+    height: 100vh;
+    padding:10rem calc((100vw - 1300px)/2);
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#557B83; 
+    padding:0rem 2rem;
+    text-shadow: -1px 0 #339EA9, 0 1px #339EA9, 1px 0 #339EA9, 0 -1px #339EA9;
+}
+
+.text h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.text p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.add-post-button button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #ffff;
+    background: #339ea9;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.add-post-button button:hover {
+    background:#70d9d4;
+    color:#e5eec1;
+}
+
+body{
+    background-image: url(../images/study.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login{
+    padding: 0rem calc((100vw - 1300px)/2);
+    position:fixed;
+    margin-left: 73rem;
+    margin-top: 1rem;
+    float: right;
+    justify-content: flex-end;
+    z-index: 101;
+}
+
+.login button {
+    padding: 0.2rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #ffff;
+    background: #339ea9;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.login button:hover {
+    background:#70d9d4;
+    color:#e5eec1;
+}
+
+.subforum{
+    margin-top:20px;
+}
+
+.subforum-title{
+    background-color:#c7c7c7;
+    padding: 5px;
+    border-radius: 5px;
+    margin:4px;
+}
+
+.subforum-row{
+    display: grid;
+    grid-template-columns: 7% 80% 13%;
+}
+
+
+.subforum-column{
+    padding: 10px;
+    margin:4px;
+    border-radius: 5px;
+    background-color:#c7c7c7;
+}
+
+.subforum-description *{
+    margin-block: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-icon i{
+    font-size: 45px;
+}
+
+.subforum-divider{
+    display: none;   
+}
+
+
+
+nav{
+    font-family: 'Julius Sans One', sans-serif;
+    margin-inline: 10px;
+}
+  /* Nav Bar styles */
+.navbar{
+    display:flex;
+    align-items: center;
+    left:0%;
+}
+.navigation{
+    background-color:#52057b;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
+}
+
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style-type:none;
+    overflow: hidden;
+}
+
+.nav-item a{
+    float: right;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color:#fff;
+}
+
+button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #339EA9;
+    color: #ffffff;
+    border: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.create_post {
+    background-color: #339EA9;
+    position: absolute;
+    top: 13%;
+    left: 80%;
+    font-weight: bold;
+  }
+
+  /* Calgary Forum */
+
+.forum-container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.forum-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Julius Sans One', sans-serif;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 10px;
+    resize: vertical; 
+}
+
