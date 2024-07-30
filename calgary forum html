@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header> 
         <!--NavBar Section-->
         <div class="navbar">
             <div class="nav-left">
@@ -75,6 +75,8 @@
                     <br>on <small>11 Dec 2023</small>
                 </div>
             </div>
+            <div id="posts">
+            </div>  
         </div>
 
     <script src="main.js"></script>
