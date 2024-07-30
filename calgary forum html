@@ -30,7 +30,7 @@
         <div class="subforum">
             <div class="subforum-row">
             </div>
-            <hr class="subforum-devider">
+            <hr class="subforum-divider">
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
                     <img src="images/social.png" alt="Social">
@@ -45,7 +45,7 @@
                     on <small>12 Dec 2023</small>
                 </div>
             </div>
-            <hr class="subforum-devider">
+            <hr class="subforum-divider">
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
                     <img src="images/textbook.png" alt="Textbook">
@@ -60,7 +60,7 @@
                     <br>on <small>12 Dec 2023</small>
                 </div>
             </div>
-            <hr class="subforum-devider">
+            <hr class="subforum-divider">
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
                     <img src="images/advice.png" alt="Advice">
