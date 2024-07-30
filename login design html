@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav> <!--navbar -->
+        <div class="logo">TITLE/LOGO</div>
+            <!--<a href="/"><img src="logo.png" alt="logo" height="60"></a>  this is for an image logo -->
+        <div class="navbar">
+            <div class="nav-right">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/">Forums</a>
+            </div>
+        </div>
+    </nav>
+    <div class="interactive">
+    <div class="login1">
+        <center><h1>Login</h1></center>
+            <form action="/signin" method="POST">
+                <div class="id">
+                    <input type="text" id="username" name="username" placeholder="Username" Required>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Password" Required>
+                    <br>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <center><p>Don't have an account? Click <a href="/signup">here</a> to register.</p></center>
+    </div>
+    </div>
+  </body>
+</body>
+</html>
