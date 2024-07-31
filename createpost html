@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Forum Post</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="forum-container">
-        <h1>Create a New Forum Post</h1>
-        <div class="post-form">
-            <input type="text" id="username" placeholder="Post Title">
-            <textarea id="postContent" placeholder="Write your post here..."></textarea>
-            <button class="add-post-button" onclick="addPost()">ADD POST</button>
+    <nav>
+        <div class="logo">TITLE/LOGO</div>
+            <!--<a href="/"><img src="logo.png" alt="logo" height="60"></a>  this is for an image logo -->
+        <div class="navbar">
+            <div class="nav-right">
+                <a href="#" onclick="redirectToHome()">Home</a>
+                <a href="#" onclick="redirectToAbout()">About</a>
+                <a href="#" onclick="redirectToForum()">Forum</a>
+            </div>
         </div>
-        <div id="posts"></div>
+    </nav>
+    <div class="center-container">
+        <div class="forum-container">
+            <h1>Create a New Forum Post</h1>
+            <div class="post-form">
+                <input type="text" id="username" placeholder="Post Title">
+                <textarea id="postContent" placeholder="Write your post here..."></textarea>
+                <select id="postCategory">
+                    <option value="social">Social</option>
+                    <option value="advice">Advice</option>
+                    <option value="textbook">Resource Exchange</option>
+                </select>
+                <div class="add-post">
+                    <button class="add-post-button" onclick="addPost()">ADD POST</button>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="app.js" defer></script>
 </body>
 </html>
