@@ -1,152 +1,62 @@
-/* navbar */
-.navbar {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-left a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.container{
-    margin: 20px;
-    padding: 20px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.subforum{
-    margin-top:20px;
-}
 
-.subforum-title{
-    background-color:#c7c7c7;
-    padding: 5px;
-    border-radius: 5px;
-    margin:4px;
-}
-
-.subforum-row{
-    display: grid;
-    grid-template-columns: 7% 80% 13%;
-}
-
-
-.subforum-column{
-    padding: 10px;
-    margin:4px;
-    border-radius: 5px;
-    background-color:#c7c7c7;
-}
-
-.subforum-description *{
-    margin-block: 0;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subforum-icon i{
-    font-size: 45px;
-}
-
-.subforum-devider{
-    display: none;   
-}
-
-
-
-header{
-    font-family: 'Julius Sans One', sans-serif;
-    margin-inline: 10px;
-}
-  /* Nav Bar styles */
 .navbar{
-    display:flex;
-    align-items: center;
-    left:0%;
-}
-.navigation{
-    background-color:#52057b;
-    padding: 10px;
-    width: 65%;
-    display: inline-block;
-    border-radius: 5px;
-    max-height: 80px;
-    margin-right:10px;
-}
-
-.close-icon i{
-    font-size:60px;
-    float: left;
-    cursor: pointer;
-}
-
-.nav-list{
-    list-style-type:none;
-    overflow: hidden;
-}
-
-.nav-item a{
-    float: right;
-    display:block;
     text-align: center;
-    margin-inline: 20px;
-    font-size: 20px;
-    padding: 10px;
-    color:#fff;
+    margin-right: 1rem;
 }
 
-button {
-    align-self: flex-end;
-    padding: 10px 20px;
-    background-color: #339EA9;
-    color: #ffffff;
-    border: none;
-    font-family: 'Inconsolata', monospace;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
+nav a {
+    text-decoration: none;
+    color: #557c83;
+    padding:0 1.5rem;
+}
+nav a:hover{
+    color:#a2d5ac;
 }
 
-.create_post {
-    background-color: #339EA9;
-    position: absolute;
-    top: 13%;
-    left: 80%;
+.logo{
+    color:#557c83;
     font-weight: bold;
-  }
-
-  /* Calgary Forum */
+    font-size: 1.5rem;
+    padding:0 2rem;
+}
 
 .forum-container {
     width: 100%;
     max-width: 1300px;
     padding: 20px;
+    position: center;
+    height: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 8px;
 }
 
-h1 {
+.forum-container h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family:'Julius Sans One', sans-serif;
 }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
 
 .post-form {
     display: flex;
     flex-direction: column;
+    
 }
 
 textarea {
@@ -159,5 +69,29 @@ textarea {
     font-family: 'Julius Sans One', sans-serif;
     margin-bottom: 10px;
     resize: vertical; 
+}
+
+
+button {
+    top: 20px;
+    background-color: #339EA9;
+    color: #ffffff;
+    border: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;}
+
+.add-post-button button:hover {
+    background:#339ea9;
+}
+
+.add-post {
+    background-color: #339EA9;
+    padding: 10px 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
