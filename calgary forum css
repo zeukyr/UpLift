@@ -1,23 +1,31 @@
-/* navbar */
-.navbar {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
-.nav-left a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.navbar{
+    text-align: center;
+    margin-right: 1rem;
 }
+
+nav a {
+    text-decoration: none;
+    color: #557c83;
+    padding:0 1.5rem;
+}
+nav a:hover{
+    color:#a2d5ac;
+}
+
+.logo{
+    color:#557c83;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding:0 2rem;
+}
+
 .container{
     margin: 20px;
     padding: 20px;
@@ -31,58 +39,6 @@
     padding:0 2rem;
 }
 
-.hero-container{ /*sorry guys not entirely sure how this part works*/
-    display: grid;
-    height: 100vh;
-    padding:10rem calc((100vw - 1300px)/2);
-    align-items: center;
-    overflow-x: hidden;
-    position: relative;
-    text-align: center;
-}
-
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:#557B83; 
-    padding:0rem 2rem;
-    text-shadow: -1px 0 #339EA9, 0 1px #339EA9, 1px 0 #339EA9, 0 -1px #339EA9;
-}
-
-.text h1{
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-
-.text p{
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.add-post-button button {
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: none;
-    color: #ffff;
-    background: #339ea9;
-    cursor: pointer;
-    border-radius: 50px;
-}
-.add-post-button button:hover {
-    background:#70d9d4;
-    color:#e5eec1;
-}
-
-body{
-    background-image: url(../images/study.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
 
 .login{
     padding: 0rem calc((100vw - 1300px)/2);
@@ -114,7 +70,7 @@ body{
 }
 
 .subforum-title{
-    background-color:#c7c7c7;
+    background-color:#FFFFFF;
     padding: 5px;
     border-radius: 5px;
     margin:4px;
@@ -151,100 +107,22 @@ body{
     display: none;   
 }
 
-
-
-nav{
-    font-family: 'Julius Sans One', sans-serif;
-    margin-inline: 10px;
-}
-  /* Nav Bar styles */
-.navbar{
-    display:flex;
-    align-items: center;
-    left:0%;
-}
-.navigation{
-    background-color:#52057b;
-    padding: 10px;
-    width: 65%;
-    display: inline-block;
-    border-radius: 5px;
-    max-height: 80px;
-    margin-right:10px;
-}
-
-.close-icon i{
-    font-size:60px;
-    float: left;
-    cursor: pointer;
-}
-
-.nav-list{
-    list-style-type:none;
-    overflow: hidden;
-}
-
-.nav-item a{
-    float: right;
-    display:block;
-    text-align: center;
-    margin-inline: 20px;
-    font-size: 20px;
-    padding: 10px;
-    color:#fff;
-}
-
 button {
-    align-self: flex-end;
-    padding: 10px 20px;
+    top: 20px;
     background-color: #339EA9;
     color: #ffffff;
     border: none;
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 .create_post {
     background-color: #339EA9;
+    padding: 10px 20px;
     position: absolute;
-    top: 13%;
-    left: 80%;
+    top: 15%;
+    left: 85%;
     font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
   }
-
-  /* Calgary Forum */
-
-.forum-container {
-    width: 100%;
-    max-width: 1300px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-.forum-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family:'Julius Sans One', sans-serif;
-}
-
-.post-form {
-    display: flex;
-    flex-direction: column;
-}
-
-textarea {
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    box-sizing: border-box; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: 'Julius Sans One', sans-serif;
-    margin-bottom: 10px;
-    resize: vertical; 
-}
-
