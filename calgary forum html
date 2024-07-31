@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="forumstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
-    <header> 
-        <!--NavBar Section-->
+    <nav>
+        <div class="logo">TITLE/LOGO</div>
+            <!--<a href="/"><img src="logo.png" alt="logo" height="60"></a>  this is for an image logo -->
         <div class="navbar">
-            <div class="nav-left">
+            <div class="nav-right">
                 <a href="#" onclick="redirectToHome()">Home</a>
                 <a href="#" onclick="redirectToAbout()">About</a>
                 <a href="#" onclick="redirectToForum()">Forum</a>
             </div>
+        </div>
+    </nav>
+    
     </header>
     <div class="container">
         <div class="subforum">
             <div class="subforum-title">
                 <h1>UCalgary Community</h1>
             </div>
-    
+            <div class="create_post">
+                <button class="create-post-button" onclick="createPost()">+ CREATE POST</button>
+            </div>
+
         </div>
         <!--More-->
         
@@ -46,6 +55,7 @@
                 </div>
             </div>
             <hr class="subforum-divider">
+
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
                     <img src="images/textbook.png" alt="Textbook">
@@ -61,6 +71,7 @@
                 </div>
             </div>
             <hr class="subforum-divider">
+            
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
                     <img src="images/advice.png" alt="Advice">
@@ -76,9 +87,8 @@
                 </div>
             </div>
             <div id="posts">
-            </div>  
+            </div>    
         </div>
-
     <script src="main.js"></script>
 </body>
 </html>
