@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="zoomedpoststyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"></div>
+            <a href="/"><img src="images/logo.png" alt="logo" height="60"></a>  
+        <div class="navbar">
+            <div class="nav-right">
+                <a href="#" onclick="redirectToHome()">Home</a>
+                <a href="#" onclick="redirectToAbout()">About</a>
+                <a href="#" onclick="redirectToForum()">Forum</a>
+            </div>
+        </div>
+    </nav>
+    
+    </header>
+    <div class="container">
+        <div class="post">
+            <div class="post-title">
+                <h1>Post Title</h1>
+            </div>
+
+        </div>
+        
+        <div class="subforum-post">
+            <div class="subforum-post-container">
+                <div class="author"> AUTHOR
+                    <br>
+                    <small class="date">12 Dec 2023</small>
+                    <div class="content">
+                        hello! im a 2nd year at UCalgary studying chem and im looking for some friends! hmu if you want to chat or study tgt :D.
+                    </div>
+                    <small class="upvotes">12 Upvotes</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="replies-title">
+            <h2>Replies</h2>
+        </div>
+
+        <div class="reply">
+            <textarea id="replyContent" placeholder="Add a response..."></textarea>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
