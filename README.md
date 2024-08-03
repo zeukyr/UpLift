@@ -26,6 +26,27 @@ What we learned
 
 On the technical side, we learned how to use Figma for prototyping, as well as the basics of HTML, CSS, and Javascript. Django helped us develop our skills in backend and working with web frameworks. We also gained an appreciation for how coding can drive positive change. Despite our limited experience, we were able to create a product that has the potential to make an impact — we’re excited to see where this project goes after the Hackathon! 
 
+User Guide
+SET UP INSTRUCTIONS
+1. Add python to PATH: https://phoenixnap.com/kb/add-python-to-path
+2. Install Git
+3. Clone the Github to your Desktop by using git.bash (git clone https://github.com/zeukyr/UpLift)
+4. Open command prompt or terminal
+5. Install and create virtual environment on command prompt. Do not activate.
+6. Change directory to the project folder 
+7. Activate virtual environment
+8. Install django (pip install django)
+9. Run website locally (python manage.py runserver). This should return a link.
+10. Copy and paste the https:// link into your browser
+
+STEP-BY-STEP
+1. Click on the Log In button at the right of the Navigation bar
+2. Register for an account
+3. Input your login details into the Log In form to sign into your account
+4. Click on Forum
+5. Search for your current/future university on the search bar. If you can’t find it, let us know in the Feedback form
+6. Create your own post using the “Create Post +” button. If you want to view or reply to other posts, you can click directly on the post titles
+
 What's next 
 
 There were features we had initially thought of but did not have time to include. In the future, we hope to implement a chat feature to allow students to interact privately and build stronger relationships. We also want to add a scholarship database, to give students a comprehensive list of potential financial aids. Lastly, partnering with universities would provide Uplift with increased publicity—an important factor for a community-based website.
