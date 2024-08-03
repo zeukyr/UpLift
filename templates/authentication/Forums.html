@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/forums.css">
+  <link rel="stylesheet" href="static/navbar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script> 
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="/"><img src="static/uplift.png" alt="logo" height="58"></a></div>
+    <div class="navbar">
+        <div class="nav-right">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/Forums">FORUMS</a>
+            <a href="/feedback">FEEDBACK</a>
+        </div>
+    </div>
+    <div class="login">
+      {% if user.is_authenticated%}
+        <p class="account"><i class="far fa-user"></i>  {{user.username}} </p>
+        <button type="submit" class="logout-btn"><a class="btn-link" href="Signout">LOG OUT</a></button>
+      {% else %}
+        <button type="submit" class="login-btn"><a class="btn-link" href="/signin">LOGIN</a></button>
+      {% endif %}
+    </div>
+  </nav>
+  <div class="searchbar">
+    <input type="text" list="universities" id="university" placeholder="SEARCH COLLEGE/UNIVERSITY FORUMS...">
+      <datalist id="universities">
+        <option value="University of Calgary"></option>
+        <option value="Rice University"></option>
+        <option value="King's College"></option>
+        <option value="University of Sydney"></option>
+      </datalist>
+    <button id="btn" onclick="openForum()">GO</i></button>
+  </div>
+  <script>
+    let input = document.getElementById("university");
+    input.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        document.getElementById("btn").click();
+      }
+    });
+    function openForum() {
+      let x = document.getElementById("university").value;
+
+      if (x==="University of Calgary") {
+        window.open("/Ucalgary","_self");
+      } else if (x==="Rice University") {
+        window.open("/riceu","_self");
+      } else if (x==="King's College") {
+        window.open("/kingscollege","_self");
+      } else if (x==="University of Sydney") {
+        window.open("/uofsydney","_self");
+      }
+    }
+  </script>
+  <div class="feedback">
+    <p>Don't see your college or university? Click <a class="link" href="/feedback">here</a> to let us know!</p>
+  </div>
+  <h1>FORUMS</h1>
+  <div class="forums">
+    <a class="box-link" href="/Ucalgary"><div class="box">University of Calgary</div></a>
+    <a class="box-link" href="/riceu"><div class="box">Rice University</div></a>
+    <a class="box-link" href="/kingscollege"><div class="box">King's College</div>
+    <a class="box-link" href="/uofsydney"><div class="box">University of Sydney</div></a>
+  </div>
+</body>
+</html>

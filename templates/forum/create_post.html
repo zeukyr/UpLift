@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/create_post.css">
+</head>
+<body>
+    <div class="center-container">
+        <div class="forum-container">
+            <h1>CREATE A NEW FORUM POST</h1>
+            <div class="post-form">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class= "add-post">
+          <button class="add-post-button">ADD POST</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
+<script>
+    let name = "{{user.id}}";
+    document.getElementById("uname").value
+        = name;
+</script>
+</body>
+</html>

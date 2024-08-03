@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.hero-container{ 
+    display: grid;
+    height: 100vh;
+    padding:10rem calc((100vw - 1300px)/2);
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    text-align: center;
+}
+
+body{
+    background-image: url('study.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text{
+    margin-top: 3%;
+    color: #557B83; 
+    padding:0rem 2rem;
+    text-shadow: -0.6px 0 #39AEA9, 0 0.6px #39AEA9, 0.6px 0 #39AEA9, 0 -0.6px #39AEA9;
+}
+
+.text h1{
+    margin-bottom: 1rem;
+    font-size: 3.1rem;
+}
+
+.text p{
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: "Rubik", sans-serif;
+}
+
+.getstarted {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    background: #39AEA9;
+    cursor: pointer;
+    border-radius: 50px;
+}

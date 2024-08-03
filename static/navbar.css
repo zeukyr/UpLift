@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: #ffff;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px)/2); /* no clue how this works but the guy in the video did it */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: auto;
+}
+
+.navbar{
+    text-align: center;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #557c83;
+    padding:0 1.5rem;
+}
+nav a:hover{
+    color:#a2d5ac;
+}
+
+.logo{
+    color:#557c83;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding:0 2rem;
+}
+
+.login{
+    padding: 0rem calc((100vw - 1300px)/2);
+    position:fixed;
+    margin-left: 68rem;
+    margin-top: 0.2rem;
+    float: right;
+    justify-content: flex-end;
+    z-index: 101;
+}
+
+.login-btn{
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background: #39AEA9;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.logout-btn{
+    padding: 0.4rem 0.8rem;
+    font-size: 13px;
+    border: none;
+    background: #39AEA9;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.account {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.login-btn:hover, .logout-btn:hover, .getstarted:hover {
+    background:#70d9d4;
+}
+
+.btn-link, .btn-link:hover {
+    text-decoration: none;
+    color: white;
+}

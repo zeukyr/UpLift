@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <link rel="stylesheet" href="static/navbar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <title>Uplift</title>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="/"><img src="static/uplift.png" alt="logo" height="58"></a></div>
+    <div class="navbar">
+        <div class="nav-right">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/Forums">FORUMS</a>
+            <a href="/feedback">FEEDBACK</a>
+        </div>
+    </div>
+    <div class="login">
+      {% if user.is_authenticated%}
+        <p class="account"><i class="far fa-user"></i>  {{user.username}} </p>
+        <button type="submit" class="logout-btn"><a class="btn-link" href="Signout">LOG OUT</a></button>
+      {% else %}
+        <button type="submit" class="login-btn"><a class="btn-link" href="/signin">LOGIN</a></button>
+      {% endif %}
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-container">
+        <div class="text">
+            <center><h1>SUCCEED TOGETHER.</h1>
+             <p>Your community to connect, engage, and discover. Meet students from your
+                <br> college or university, or explore colleges and universities across the globe.</p>
+            <button type="submit" class="getstarted"><a class="btn-link" href="signup">GET STARTED</a></button>
+        </div>
+    </div>
+  </section>
+</body>
+</html>
+
+<!-- add alert to sign in if not logged in when click on forums-->

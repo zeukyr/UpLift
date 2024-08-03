@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="static/feedback.css">
+    <link rel="stylesheet" href="static/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script> 
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="/"><img src="static/uplift.png" alt="logo" height="58"></a></div>
+        <div class="navbar">
+            <div class="nav-right">
+                <a href="/">HOME</a>
+                <a href="/about">ABOUT</a>
+                <a href="/Forums">FORUMS</a>
+                <a href="/feedback">FEEDBACK</a>
+            </div>
+        </div>
+        <div class="login">
+          {% if user.is_authenticated%}
+            <p class="account"><i class="far fa-user"></i>  {{user.username}} </p>
+            <button type="submit" class="logout-btn"><a class="btn-link" href="Signout">LOG OUT</a></button>
+          {% else %}
+            <button type="submit" class="login-btn"><a class="btn-link" href="/signin">LOGIN</a></button>
+          {% endif %}
+        </div>
+      </nav>
+    <br><br>
+    <div class="interactive">
+      <div class="container">
+        <form>
+            <h1>YOUR INPUT IS GREATLY APPRECIATED!</h1>
+            <div class="id">
+                <input class="body" type="text" placeholder="Full Name">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="id">
+                <input class="body" type="email" placeholder="Email Address">
+                <i class="far fa-envelope"></i>
+            </div>
+            <textarea class="body" cols="20" rows="5" placeholder="Please enter your feedback or the colleges/universities you would like to see here."></textarea>
+            <button>Send</button>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

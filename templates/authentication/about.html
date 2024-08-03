@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uplift</title>
+    <link rel="stylesheet" href="static/navbar.css">
+    <link rel="stylesheet" href="static/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="/"><img src="static/uplift.png" alt="logo" height="58"></a></div>
+    <div class="navbar">
+        <div class="nav-right">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/Forums">FORUMS</a>
+            <a href="/feedback">FEEDBACK</a>
+        </div>
+    </div>
+    <div class="login">
+      {% if user.is_authenticated%}
+        <p class="account"><i class="far fa-user"></i>  {{user.username}} </p>
+        <button type="submit" class="logout-btn"><a class="btn-link" href="Signout">LOG OUT</a></button>
+      {% else %}
+        <button type="submit" class="login-btn"><a class="btn-link" href="/signin">LOGIN</a></button>
+      {% endif %}
+    </div>
+  </nav>
+  <br><br>
+  <div class="more-studying">
+    <img src="static/teal.png" alt="More Studying" class="more-studying-image">
+    <div class="text-on-image">WHO ARE WE</div>
+  </div>
+  <div class="about">
+    <h2>ABOUT US</h2>
+    <p>It's often a lonely and confusing experience to be a first generation student — but it doesn't have to be. If you are looking to apply to a Canadian university, UpLift will connect you with people who have gone through the same process! If you're a current first-generation university student, you can join a supportive network of peers and exchange academic resources.</p>
+    <br>
+    <h2>OUR VISION</h2>
+    <p>We envision a community where first-generation students feel valued, supported, and connected, enabling them to overcome challenges and achieve their educational goals.</p>
+    <br>
+    <h2>HOW IT WORKS</h2>
+    <p>Getting involved with Uplift is easy! To be able to participate in discussions, all you have to do is <a href="signup" class="button-link">make an account</a>. </p>
+    <br>
+    <h2>TESTIMONIALS</h2>
+</div>
+
+<div class="testimonials">
+    <p> "Wow!! Making an account at Uplift was the smartest choice I have made in my university career. Being the first in my family to go to university was certainly tough, but I'm so glad that I was able to find people who could guide me through every part of the process — from finding scholarships to dealing with bureaucracy to making friends!" </p>
+    <div class="turtle">
+        <img src="static/turtle.png" alt="Profile Picture">
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>

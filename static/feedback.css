@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.interactive {
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #435a5e;
+}
+
+.container {
+    width: 360px;
+    background: white;
+    box-shadow: 0 0 8px white;
+    opacity: 0.6;
+}
+
+.container form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+form h1{
+    padding: 10px 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+form .id{
+    position: relative;
+}
+.id i{ /*optional icons*/
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border: 1px solid #557c83;
+    border-radius: 3px;
+    background: white;
+    padding: 0.15px;
+    /*font-family: */
+    font-size: 20px;
+}
+
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid #557c83;
+    border-radius: 3px;
+    background: white;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    color: #ffff;
+    background: #339ea9;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+}
+
+button:hover {
+    background:#70d9d4;
+    color:#e5eec1;
+}
+
+.body {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}

@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.upvotes{
+    font-family: sans-serif;
+    display: block;
+    margin-top: 20px; 
+    text-align: left; 
+}
+
+.author{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+}
+
+.date{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+.logo{
+    color:#557c83;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding:0 2rem;
+}
+
+.subforum-post-container{
+    padding: 10px;
+    margin:4px;
+    border-radius: 5px;
+    background-color:#EDEDED;
+    height:130px;
+}
+
+.replies-title{
+    padding: 10px;
+    margin:4px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color:#EDEDED;
+
+}
+
+.reply{
+    padding: 10px;
+    margin:4px;
+    border-radius: 5px;
+    background-color:#EDEDED;
+    box-sizing: border-box; 
+
+}
+
+.container{
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.content {
+    font-family: 'Rubik', sans-serif;
+}
+
+.back {
+    margin-left: 95%;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    color: #39AEA9;
+}
+
+.create-comment-button {
+    background-color: #339EA9;
+    color: #ffffff;
+    border: 1px solid #339EA9;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 48px;
+    width: 200px;
+    margin-left: 83%;
+}
+
+.comment-head {
+    margin-left: 1%;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+}
+
+.comment-body {
+    margin-left: 1%;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}

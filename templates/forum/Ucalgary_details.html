@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uplift</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'ucalgary_details.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="post">
+        <div class="post-title">
+          <h1 class="hi">{{post.title}}</h1>
+        </div>
+    </div>
+    <div class="subforum-post">
+      <div class="subforum-post-container">
+          <div class="author">{{post.author}}
+            <br>
+            <small class="date">{{post.post_date}}</small>
+            <div class="content">
+              {{post.body}}
+            </div>
+        </div>
+    </div>
+  </div>
+    <a class="back" href={% url "Ucalgary"%}>Back</a>
+    <div class="replies-title">
+      <h2>COMMENTS</h2>
+    </div>
+    <br>
+    {% for comment in post.comments.all%}
+      <div class="comment-head">
+        {{comment.name}} - {{comment.comment_date}}
+      </div>
+      <div class="comment-body">{{comment.body}}</div>
+      <br>
+    {% endfor %}
+    <a href={% url "Create-comment" post.pk %}><button class="create-comment-button">ADD COMMENT +</button></a>
+    <br>
+</body>
+</html>
