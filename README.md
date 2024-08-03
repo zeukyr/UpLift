@@ -1,3 +1,7 @@
+Project Overview
+
+Uplift website designed to empower FGLI students, whether they're already in university or aspiring to go! All they need to do is make an account, and they’ll be able to connect with other students from a similar background who can provide the guidance and support that they need to succeed.
+
 Inspiration
 
 Being the first in one’s family to go to university is, for many, a lonely and overwhelming process. FGLI students might face difficulties such as not knowing how to find scholarships or apply for financial aid. They might also experience a sense of loneliness from being in a campus where the majority of students do not come from the same background. We thought that the best support would come from those who truly understand this journey — other FGLI students. 
