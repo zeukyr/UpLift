@@ -24,8 +24,7 @@ We are proud of learning how to use HTML, CSS, and Javascript in a relatively sh
 
 What we learned
 
-On the technical side, we learned how to use Figma for prototyping, as well as the basics of HTML, CSS, and Javascript. Django helped us develop our skills in backend and working with web frameworks. We also gained an appreciation for how coding can drive positive change. Despite our limited experience, we were able to create a product that has the potential to make an impact — we’re excited to see where this project goes after the Hackathon! (probably nowhere but shhh)
+On the technical side, we learned how to use Figma for prototyping, as well as the basics of HTML, CSS, and Javascript. Django helped us develop our skills in backend and working with web frameworks. We also gained an appreciation for how coding can drive positive change. Despite our limited experience, we were able to create a product that has the potential to make an impact — we’re excited to see where this project goes after the Hackathon! 
 
 What's next 
 There were features we had initially thought of but did not have time to include. In the future, we hope to implement a chat feature to allow students to interact privately and build stronger relationships. We also want to add a scholarship database, to give students a comprehensive list of potential financial aids. Lastly, partnering with universities would provide Uplift with increased publicity—an important factor for a community-based website.
-
